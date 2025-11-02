@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prachi Rajput | Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="photo-placeholder.jpg">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="photo-placeholder.jpg" />
 </head>
 <body>
   <header>
@@ -17,19 +17,18 @@
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
-        <button id="theme-toggle">🌙</button>
       </nav>
     </div>
   </header>
 
   <section id="about" class="section">
     <div class="container">
-      <img src="photo-placeholder.jpg" alt="Prachi Rajput" class="profile-pic">
+      <img src="photo-placeholder.jpg" alt="Prachi Rajput" class="profile-pic" />
       <h2>About Me</h2>
       <p>
         Hello! I’m <strong>Prachi Rajput</strong>, a 3rd-year Computer Science student at
-        <strong>Samrat Ashok Technological Institute (SATI), Vidisha</strong>.  
-        I’m passionate about software engineering, DSA in Java, and modern web development.  
+        <strong>Samrat Ashok Technological Institute (SATI), Vidisha</strong>.<br />
+        I’m passionate about software engineering, DSA in Java, and modern web development.
         I love learning new technologies and creating solutions that make an impact.
       </p>
       <a href="RESUME2.pdf" class="btn" download>📄 Download Resume</a>
@@ -58,17 +57,27 @@
       <h2>Projects</h2>
       <div class="projects">
         <div class="project-card">
-          <h3>Portfolio Website</h3>
-          <p>A personal responsive website built using HTML, CSS, and JavaScript to showcase my skills and projects.</p>
+          <h3>Spotify Clone</h3>
+          <p>
+            A responsive Spotify music player clone built using HTML, CSS, and JavaScript.
+            It features a custom UI, play/pause controls, and playlist layout inspired by Spotify’s design.
+          </p>
+          <a href="https://github.com/Prachi088/spotify-clone" target="_blank">View on GitHub →</a>
         </div>
+
         <div class="project-card">
           <h3>DSA Practice Repository</h3>
-          <p>A collection of solved Java-based Data Structure and Algorithm problems organized by category.</p>
+          <p>
+            A collection of solved Java-based Data Structure and Algorithm problems organized by category.
+          </p>
           <a href="https://github.com/Prachi088" target="_blank">View on GitHub →</a>
         </div>
+
         <div class="project-card">
           <h3>React To-Do App</h3>
-          <p>A task management web app built with React and Bootstrap to track daily goals and productivity.</p>
+          <p>
+            A task management web app built with React and Bootstrap to track daily goals and productivity.
+          </p>
         </div>
       </div>
     </div>
@@ -90,13 +99,6 @@
   <script>
     // Update year automatically
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Dark mode toggle
-    const toggle = document.getElementById('theme-toggle');
-    toggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark');
-      toggle.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
-    });
   </script>
 </body>
 </html>

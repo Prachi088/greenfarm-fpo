@@ -195,3 +195,26 @@ footer {
   margin-top: 50px;
   font-size: 0.9rem;
 }
+/* ----- Profile Image Hover Effect ----- */
+/* ----- Profile Image Hover Effect (Enhanced) ----- */
+.profile-pic {
+  width: 180px;              /* increased default size */
+  height: 180px;
+  border-radius: 50%;
+  margin-bottom: 25px;
+  border: 4px solid #0077b6;
+  object-fit: cover;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+/* Hover: enlarge more noticeably */
+.profile-pic:hover {
+  transform: scale(1.25);    /* increased zoom amount */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* When clicked: gentle shrink */
+.profile-pic:active {
+  transform: scale(1.15);
+}
